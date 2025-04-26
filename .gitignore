@@ -1,0 +1,23 @@
+# Node.js backend ke liye
+node_modules/
+.env
+
+# React frontend ke liye
+frontend/node_modules/
+frontend/.env
+frontend/build/
+
+# Vercel ya deployment ke liye
+.vercel/
+
+# Mac system ke files (optional but good)
+.DS_Store
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Others
+dist/
+tmp/
