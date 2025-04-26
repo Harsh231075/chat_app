@@ -6,7 +6,7 @@ const userSocketMap = {}; // <-- globally define userSocketMap
 const setupSocket = (server) => {
     io = new Server(server, {
         cors: {
-            origin: 'http://localhost:5173',
+            origin: process.env.VITE_FRONTEND_URL,
             credentials: true,
             methods: ['POST', 'GET'],
         },
