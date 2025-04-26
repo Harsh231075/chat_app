@@ -11,7 +11,7 @@ import MekoLandingPage from'./pages/MekoLandingPage';
 
 function App() {
   const user = useSelector((store) => store.user.user);
-console.log("app=",user);
+// console.log("app=",user);
 const dispatch=useDispatch();
 
 useEffect(() => {

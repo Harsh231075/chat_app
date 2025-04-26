@@ -18,14 +18,14 @@ const useFetchMessages = () => {
     setLoading(true);
     try {
       console.log(selectedUser);
-      console.log("id mili =>",userId);
+      // console.log("id mili =>",userId);
       const token = localStorage.getItem('token');
-      const response = await axios.get(`${import.meta.env.VITE_FRONTEND_URL}/message/get/${userId}`, {
+      const response = await axios.get(`${import.meta.env.VITE_FRONTEND_URL}/api/message/get/${userId}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
       });
-//  console.log(response)
+    // console.log("reponse=>",response)
       if (response.status === 200) {
         dispatch(clearMessages(''));
         dispatch(setAllMessages(response.data?.conversation?.message));
