@@ -14,7 +14,7 @@ const app = express();
 connectedB();
 
 app.use(cors({
-  origin: process.env.VITE_FRONTEND_URL, 
+  origin: process.env.FRONTEND_URL, 
   credentials: true
 }));
 app.use(express.json());
